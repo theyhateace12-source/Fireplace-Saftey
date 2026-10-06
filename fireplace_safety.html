@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7b2d26">
+<title>Fireplace Safety Guide</title>
+<style>
+  :root{
+    --bg:#f5f1eb; --card:#fffdf9; --ink:#29231f; --muted:#6d625b;
+    --accent:#8d3027; --accent2:#c85b32; --safe:#315f4b;
+    --warn:#8a541d; --danger:#8b2525; --line:#e2d8ce;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+  header{background:linear-gradient(135deg,#54201d,#963c2e 60%,#c35b32);color:white;padding:42px 20px 34px;text-align:center}
+  header .fire{font-size:46px;margin-bottom:8px}
+  h1{margin:0;font-size:clamp(30px,7vw,48px);letter-spacing:-1px}
+  header p{max-width:700px;margin:10px auto 0;color:#ffece5;font-size:17px}
+  nav{position:sticky;top:0;z-index:10;background:#fffdf9;border-bottom:1px solid var(--line);padding:10px 12px;overflow-x:auto;white-space:nowrap}
+  nav a{display:inline-block;color:var(--accent);text-decoration:none;font-weight:700;padding:8px 12px;border-radius:999px}
+  nav a:hover{background:#f2e5df}
+  main{max-width:900px;margin:auto;padding:22px 16px 50px}
+  .alert{background:#fff0ec;border:2px solid #d47b67;border-radius:16px;padding:17px 18px;margin-bottom:22px}
+  .alert strong{color:var(--danger)}
+  section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:23px 21px;margin:18px 0;box-shadow:0 3px 12px rgba(55,35,20,.05)}
+  section h2{margin:0 0 6px;color:var(--accent);font-size:25px}
+  .subtitle{margin:0 0 18px;color:var(--muted)}
+  ol{padding-left:25px;margin-bottom:10px}
+  li{margin:12px 0}
+  li::marker{font-weight:800;color:var(--accent)}
+  ul{padding-left:23px}
+  ul li{margin:10px 0}
+  .tip{border-left:5px solid var(--safe);background:#eef5f0;padding:13px 15px;border-radius:8px;margin-top:16px}
+  .warning{border-left:5px solid var(--warn);background:#fff7e8;padding:13px 15px;border-radius:8px;margin-top:16px}
+  .emergency{border-left:5px solid var(--danger);background:#fff0f0;padding:15px;border-radius:8px}
+  .step-label{font-weight:800}
+  .checklist{display:grid;gap:10px;margin-top:16px}
+  .check{background:#f7f3ee;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  footer{text-align:center;color:var(--muted);padding:25px 15px 40px;font-size:14px}
+  button{border:0;background:var(--accent);color:#fff;padding:12px 16px;border-radius:10px;font-weight:800;font-size:15px;cursor:pointer}
+  button:hover{background:#6f241f}
+  .top{text-align:right;margin-top:18px}
+  @media (min-width:700px){section{padding:28px}.checklist{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="fire">🔥</div>
+  <h1>Fireplace Safety</h1>
+  <p>A simple step-by-step guide for starting, safely burning, and putting out a wood fire.</p>
+</header>
+
+<nav aria-label="Page sections">
+  <a href="#starting">Starting</a>
+  <a href="#safety">Safety</a>
+  <a href="#putting-out">Putting It Out</a>
+  <a href="#unsure">If Unsure</a>
+  <a href="#emergency">Emergency</a>
+</nav>
+
+<main>
+  <div class="alert">
+    <strong>⚠️ Most important rule:</strong> Never leave a burning wood fire unattended.
+    Do not leave the house or go to sleep while it is burning.
+  </div>
+
+  <section id="starting">
+    <h2>🔥 Starting the Fire</h2>
+    <p class="subtitle">Follow these steps in order.</p>
+    <ol>
+      <li><span class="step-label">Make sure the damper/flue is OPEN.</span></li>
+      <li><span class="step-label">Put ONE Duraflame Quick Start firelighter on the metal grate.</span> Break off ONE piece only; do not use the whole 4-pack.</li>
+      <li><span class="step-label">Put 1–2 pieces of dry firewood around/above it, leaving air gaps.</span> Do not cover it completely.</li>
+      <li><span class="step-label">Light the rough-textured edge</span> with a long lighter or fireplace match.</li>
+      <li><span class="step-label">When the wood catches well, add larger pieces one at a time.</span></li>
+      <li><span class="step-label">Keep the mesh screen CLOSED while burning,</span> except briefly when adding wood.</li>
+    </ol>
+    <div class="tip"><strong>Remember:</strong> The fire needs airflow. Don't bury the firelighter or pack the wood tightly together.</div>
+  </section>
+
+  <section id="safety">
+    <h2>🛡️ Safety Rules</h2>
+    <ul>
+      <li><strong>Never leave a burning wood fire unattended.</strong></li>
+      <li>Do not leave the house or go to sleep while it is burning.</li>
+      <li><strong>Keep the damper FULLY OPEN</strong> while flames, smoke, or hot coals are present.</li>
+      <li>Never add gasoline, lighter fluid, alcohol, or other liquids.</li>
+      <li>A mesh screen contains sparks/embers but <strong>does NOT make an unattended fire safe.</strong></li>
+      <li>Flames going out does not mean the fire is safe; hot embers can remain for hours.</li>
+    </ul>
+    <div class="warning"><strong>Damper warning:</strong> Never close the damper while smoke or hot coals are still present. Closing it can allow dangerous smoke and carbon monoxide to enter the room.</div>
+  </section>
+
+  <section id="putting-out">
+    <h2>🧯 Putting the Fire Out</h2>
+    <p class="subtitle">The safest approach is to let the fire burn down naturally.</p>
+    <ol>
+      <li><span class="step-label">Stop adding wood.</span></li>
+      <li><span class="step-label">Keep the mesh screen closed.</span></li>
+      <li><span class="step-label">Keep the damper open</span> while burning or producing smoke.</li>
+      <li><span class="step-label">Let the wood burn down naturally;</span> avoid moving burning logs unnecessarily.</li>
+      <li><span class="step-label">When only glowing embers remain,</span> gently spread them into a thin layer with the poker.</li>
+      <li><span class="step-label">Leave the damper OPEN</span> until the fire and embers are completely out and no longer producing smoke.</li>
+      <li><span class="step-label">When everything is completely cold,</span> put ashes in a metal container with a tight-fitting lid, outside and away from the house.</li>
+    </ol>
+    <div class="warning"><strong>Do NOT pour a large amount of water onto a hot fireplace unless it is an emergency.</strong> Sudden cooling can damage masonry and create steam.</div>
+  </section>
+
+  <section id="unsure">
+    <h2>❓ If You're Unsure</h2>
+    <div class="checklist">
+      <div class="check">🛑 <strong>Not sure the damper is open?</strong><br>Do not light the fire until you have confirmed it is open.</div>
+      <div class="check">📖 <strong>Instructions differ?</strong><br>Follow your fireplace/chimney and firelighter manufacturer's instructions if they differ.</div>
+    </div>
+  </section>
+
+  <section id="emergency">
+    <h2>🚨 Emergency</h2>
+    <div class="emergency">
+      <p><strong>If smoke enters the room, the fire behaves unexpectedly, or you suspect a chimney/fire problem:</strong></p>
+      <p>Move to safety and contact emergency/fire services as appropriate.</p>
+      <p><strong>Keep a working carbon-monoxide alarm near the fireplace/living area.</strong></p>
+    </div>
+  </section>
+
+  <div class="top"><button onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Back to top</button></div>
+</main>
+
+<footer>
+  Fireplace Safety Guide • Use this as a quick reference, not a replacement for your fireplace/chimney manufacturer's instructions or local fire-safety guidance.
+</footer>
+</body>
+</html>
